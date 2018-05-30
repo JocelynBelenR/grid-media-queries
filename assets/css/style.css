@@ -1,0 +1,55 @@
+img {
+    width: 100%;
+}
+
+.titulo{
+    text-align: center;
+    padding: 5%;
+    font-family: 'Butterfly Kids', cursive;
+}
+
+p{
+    font-family: 'Indie Flower', cursive; /*https://fonts.google.com/ */
+}
+
+.primera_seccion {
+    text-align: justify;
+    padding: 5%;
+    font-size: 20px;
+}
+
+/* rango del px minimo y px maximo */
+@media (min-width: 200px) and (max-width: 424px) {
+    [class*="col-"] {
+        width: 100%; /*100% de la pantalla */
+        text-align: center;
+    }
+
+    .perrito { /*es para cambiar solo la imagen en el responsive en la consola */
+        content: url("../img/images.jpg"); /*../ para retroceder carpetas */
+    }
+
+    body {
+        background-color: pink;
+    }
+
+    .titulo {
+        font-family: 'Source Sans Pro', sans-serif; /*cambia la letra solo en este responsive */
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .perrito { 
+        content: url("../img/perro+novio.jpg"); 
+    }
+
+    body {
+        background-color: aqua;
+    }
+
+}
